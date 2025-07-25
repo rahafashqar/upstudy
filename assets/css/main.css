@@ -1,0 +1,439 @@
+:root{
+    --primaryColor:#ec5252;
+    --primaryFont:"Outfit", sans-serif;
+    --subFont:"Antonio", sans-serif;
+}
+body{
+    font-family: var(--primaryFont);
+    overflow-x: hidden;
+}
+h3{
+    font-family: var(--subFont);
+    font-size: 52px;
+}
+li{
+    list-style: none;
+}
+.title{
+    font-family: var(--subFont);
+}
+.text_primaryColor{
+    color: var(--primaryColor) !important;
+}
+.bg_primaryColor{
+    background-color: var(--primaryColor);
+}
+.border_primaryColor{
+    border-color: var(--primaryColor) !important;
+}
+.w_fit_content{
+    width: fit-content;
+}
+.h_fit_content{
+    height: fit-content;
+}
+.letter_spacing_1{
+    letter-spacing: 1px;
+}
+.letter_spacing_2{
+    letter-spacing: 2px;
+}
+.fs_14{
+    font-size: 14px;
+}
+.top_bar{
+    background-color: #131212;
+}
+.top_bar .right_side .register a{
+    transition: color 0.4s;
+}
+.top_bar .right_side .register a:hover{
+    color: var(--primaryColor) !important;
+}
+header .navbar .navbar-toggler{
+    border-color: #fff;
+}
+header .navbar .dropdown-toggle::after{
+    display: none;
+}
+header .navbar .nav-item .nav-link img{
+    margin-bottom: 6px;
+}
+header .navbar .nav-item{
+    position: relative;
+}
+header .navbar .nav-item .dropdown-menu{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.4s;
+}
+header .navbar .nav-item:hover .dropdown-menu{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.popover .popover_title{ /*اذا بدي أحدد انع تابع لسيكشن الهيدر بحتاج js*/
+    font-family: var(--primaryFont);
+    color: #021e40;
+    padding: 0 40px;
+}
+.popover .popover_link{
+    font-family: var(--primaryFont);
+    font-size: 12px;
+    color: #021e40;
+    transition: color 0.4s;
+}
+.popover .popover_link:hover{
+    color: var(--primaryColor);
+}
+header .navbar .start_shopping .shopping_cart span{
+    height: 18px;
+    width:18px;
+    top: 10px;
+    left: 25px;
+    font-size: 12px;
+}
+header .navbar .btn{
+    transition: background-color 0.4s;
+}
+header .navbar .btn:hover ,
+.hero .btn:hover ,
+.promo_book .download_btn:hover
+{
+    background-color: #021e40;
+}
+.hero{
+    background-image: url("./../images/HomePage/hero/hero-img.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero h1{
+    font-family: var(--subFont);
+    font-size: 94px;
+    top: 200px;
+}
+.hero p{
+    max-width: 541px; /*تم استخدامها بشكل مؤقت لحتى نوخد جافا س */
+    top: 425px;
+}
+.hero a.btn{
+    font-family: var(--subFont);
+    top: 565px;
+    transition: background-color 0.4s;
+}
+.rotate_red_layer1{
+    background-color: #E05243;
+    clip-path: polygon(108% 26%, 99% 55%, 31% 102%, 3% 100%);
+    height: 687px;
+    width: 705px;
+    right: -49px;
+    bottom: 0;
+}
+.rotate_red_layer2{
+    background-color: #E05243;
+    clip-path: polygon(100% 23%, 100% 65%, 75% 100%, 44% 100%);
+    height: 309px;
+    width: 652px;
+    bottom: -25px;
+    right: 0;
+}
+.rotate_red_layer3{
+    background-color: #E05243;
+    clip-path: polygon(0 56%, 49% 0, 0 0);
+    height: 479px;
+    width: 700px;
+    top: -50px;
+}
+.rotate_gray_layer{
+    clip-path: polygon(34% 0, 75% 0, 0 110%, 0 47%);
+    height: 827px;
+    width: 1435px;
+    top: -88px;
+    left: -60px;
+    background-color: #212020B3;
+}
+.hero_top_layer {
+    background-color: #130e0e;
+}
+.intro_section{
+    background-color: #191918;
+    padding: 120px 0;
+}
+.intro_section .intro_rotate_red_layer{
+    background-color: #E05243;
+    clip-path: polygon(79% 100%, 0 45%, 0 100%);
+    height: 541px;
+    width: 441px;
+    left: 0;
+    bottom:0;
+}
+.intro_section .intro_details p{
+    color: #c2c2c2;
+}
+.intro_section .feature{
+    background-color: #282828;
+    gap: 20px;
+}
+.intro_section .feature h3
+{
+    font-family: var(--subFont);
+}
+.popular_classes{
+    background-color: rgb(31, 31, 30);
+    background-image: url("./../images/HomePage/popularClasses/redLinesBG.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 95px 0;
+}
+.popular_classes .carousel{
+    padding: 50px 0 65px;
+}
+.popular_classes .carousel-indicators .active{
+    background-color: var(--primaryColor);
+}
+.popular_classes .carousel-indicators [data-bs-target] , 
+.testimonials .carousel-indicators [data-bs-target]
+{
+    width: 12px;
+    height: 12px;
+}
+.popular_classes .carousel-item .card{
+    background-color: #282828;
+    transition: box-shadow 0.5s;
+}
+.popular_classes .carousel-item .card:hover {
+  box-shadow: 2px 2px 12px rgba(189, 53, 53, 0.1),
+              -2px 2px 12px rgba(189, 53, 53, 0.1), 
+               2px -2px 12px rgba(189, 53, 53, 0.1), 
+               -2px -2px 12px rgba(189, 53, 53, 0.1);
+}
+.popular_classes .carousel-item .card a.btn{
+    font-size: 13px;
+    top: 15px;
+    left: 15px;
+    transition: all .4s;
+}
+.popular_classes .carousel-item .card a.btn:hover{
+    background-color: rgb(2, 30, 64 , .25);
+    font-weight: 600;
+    box-shadow: 1px 1px 13px 5px #021e40;
+}
+.popular_classes .carousel-item .card .img .bookmark_img{
+    height: 35px;
+    width: 35px;
+    top: 15px;
+    right: 15px;
+    transition: background-color 0.4s;
+}
+.popular_classes .carousel-item .card .img .bookmark_img:hover{
+    background-color: #021e40 !important;
+}
+.popular_classes .carousel-item .card .main_img_top_layer{
+   background-color: rgba(0, 0, 0, 0.29);
+}
+.popular_classes .carousel-item .card .author{
+    bottom: 10px;
+    left: 15px;
+}
+.popular_classes .carousel-item .card .author .author_img{
+    border-color: rgb(204, 204, 204)  !important;
+    height: 33px;
+    width: 33px;
+}
+.popular_classes .carousel-item .class_details a{
+    font-size: 22px;
+}
+.popular_classes .carousel-item .class_info img{
+    padding: 6px;
+    height: 30px;
+    width: 30px;
+}
+.popular_classes .carousel-item .explore{
+    border-top-color: rgb(105, 104, 104, .25) !important;
+}
+.popular_classes .carousel-item .explore .price{
+    color: #ff4830;
+}
+.popular_classes .carousel-item .explore a{
+    transition: color 0.4s;
+}
+.popular_classes .carousel-item .explore a:hover{
+    color: var(--primaryColor) !important;
+}
+.achievements{
+    background-color: #191918;
+    padding: 75px 0 0;
+}
+.achievements .container{
+    padding-bottom: 55px;
+}
+.achievements .achievement .number{
+    font-family: var(--subFont);
+    font-size: 48px;
+}
+.trainers{
+    background-color: #191918;
+    padding: 80px 0;
+}
+.trainers .trainer_img_top_layer{
+    background-image:  linear-gradient(180deg, #00000000 10%, #000000E6 100%);;
+}
+.trainers .trainer_name{
+    font-family: var(--subFont);
+    left:47px;
+    bottom: 95px;
+    transition: color 0.4s;
+}
+.trainers .trainer_name:hover{
+    color: #021e40;
+}
+.trainers .teacher_degree{
+    font-size: 12px;
+    left:47px;
+    bottom: 70px;
+}
+.trainers .trainer_social_media{
+    left:47px;
+    bottom: 43px;
+    gap: 11px;
+}
+.trainers .social_media_img img{
+    transition:  transform 0.9s;
+}
+.trainers .facebook_img:hover img ,
+.trainers .twitter_img:hover img ,
+.trainers .linkedIn_img:hover img
+{
+    transform: translateY(-5px);
+}
+.trainers .top_red_triangle{
+    height: 130px;
+    width: 45px;
+    left:27px;
+    bottom: 13px;
+    transition: padding-right .7s;
+}
+.trainers .trainer_img:hover .top_red_triangle{
+    padding-right: 150px;
+}
+.promo_book{
+    background-color: #191918;
+    padding: 20px 0 100px;
+}
+.promo_book .container-lg{
+    background-image: linear-gradient(135deg, #1F1F1E 70%, #EC5252 60%);
+    padding: 77px 70px 100px;
+}
+.promo_book .description{
+    color: #C2C2C2;
+}
+.promo_book .download_btn{
+    font-family: var(--subFont);
+    transition: background-color 0.4s;
+    padding: 12px 26px;
+}
+.promo_book .promo_book_img{
+    top: 57px;
+    right: 183px;
+}
+.promo_book .promo_book_img img{
+ max-width: 300px;
+}
+.testimonials{
+    background-color: rgb(25, 25, 24);
+    padding-bottom: 100px;
+}
+.testimonials .carousel-item .card{
+    background-image: url("./../images/HomePage/testimonials/testimonialsSectionBG.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #FFFFFF33 !important;
+    padding-left: 140px;
+    transition: box-shadow 0.5s;
+
+}
+.testimonials .carousel-item .card:hover{
+    box-shadow: 2px 2px 12px rgba(189, 53, 53, 0.1),
+                -2px 2px 12px rgba(189, 53, 53, 0.1), 
+                 2px -2px 12px rgba(189, 53, 53, 0.1), 
+                -2px -2px 12px rgba(189, 53, 53, 0.1);
+}
+.testimonials .carousel-item .card .feedback{
+    font-size: 22px;
+    color: rgb(194, 194, 194);
+    line-height: 36px;
+}
+.testimonials .carousel-item .card .feedback_author_img{
+    left: -80px;
+    top: 25px;
+}
+.testimonials .carousel-indicators{
+    margin-bottom:0;
+}
+.leatest_news{
+    background-color: rgb(25, 25, 24);
+    padding: 60px 0 80px;
+}
+.leatest_news .card .news_img_top_layer{
+    transition: background-color 0.4s;
+}
+.leatest_news .card:hover .news_img_top_layer{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.leatest_news .card img {
+  transition: transform 0.7s;
+}
+.leatest_news .card:hover img{
+    transform: scale(1.05);
+}
+.leatest_news .details .news_author::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 4.5px;
+    background-color: var(--primaryColor);
+    right: -28px;
+    top: 8px;
+}
+.leatest_news .card-text{
+    font-family: var(--subFont);
+    font-size: 22px;
+}
+.leatest_news .card .news_author{
+    word-spacing: 1px;
+}
+.leatest_news .card .news_author a{
+    transition: all 0.4s;
+}
+.leatest_news .card .news_author a:hover{
+    text-decoration: underline !important;
+    color: var(--primaryColor) !important;
+}
+footer{
+    background-color: #0E0E0D;
+    color: rgb(105, 104, 104);
+    padding-top: 70px;
+}
+footer h2{
+    font-size: 18px;
+}
+footer a{
+    transition: color 0.5s;
+}
+footer a:hover{
+    color: #F6520A !important;
+}
+footer .center a{
+    color: rgb(105, 104, 104);
+    font-size: 15px;
+}
+footer .lower_footer .social_icons .social_icon path{
+    transition: fill 0.5s;
+}
+footer .lower_footer .social_icons .social_icon:hover path{
+    fill: red;
+}
