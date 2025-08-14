@@ -1,3 +1,8 @@
+@media screen and (min-width:1783px){
+    .contact .hero .rhombus_img{
+        display: block !important;
+    }
+}
 @media screen and (max-width:1523px){
     .rotate_red_layer1{
        bottom: -50px;
@@ -37,10 +42,33 @@
     .promo_book .promo_book_img{
         right: 70px;
     }
+    .contact .hero .circle_shape{
+        display: none;
+    }
 }
 @media screen and (max-width: 1052px) and (min-width: 993px){
     .popular_classes .carousel-item .explore{
         font-size: 15px;
+    }
+}
+@media screen and (max-width: 993px){
+    .home header .navbar .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.736) !important;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+    .home header .navbar .start_shopping{
+        display: block !important;
+    }
+    .home header .navbar .start_shopping .btn{
+        margin-top: 10px;
+    }
+    .contact .top_bar{
+        display: none !important;
+    }
+    .contact .hero h1{
+        font-size: 36px;
     }
 }
 @media screen and (max-width:980px){
@@ -114,6 +142,9 @@
     footer .top_footer .right_side .app_store_img img{
         margin: 0 !important;
     }
+    .contact .hero h1{
+        font-size: 32px;
+    }
 }
 @media screen and (max-width:740px){
     .hero h1{
@@ -154,6 +185,15 @@
         margin: auto;
         padding-top: 20px;
     }
+    .contact header .navbar-toggler{
+        margin-left: 3px !important;
+    }
+    .contact header .navbar .start_shopping .shopping_cart{
+        display: none !important;
+    }
+    .contact header .navbar .start_shopping .search_icon{
+        border: none !important;
+    }
 }
 @media screen and (max-width:547px){
     .hero h1{
@@ -177,6 +217,9 @@
     }
     .intro_section .main_img{
         padding: 30px !important;
+    }
+    .contact header .navbar .start_shopping{
+        display: none !important;
     }
 }
 @media screen and (max-width:391px){
