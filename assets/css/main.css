@@ -9,7 +9,7 @@ body{
     font-family: var(--primaryFont);
     overflow-x: hidden;
 }
-h3{
+.home h3{
     font-family: var(--subFont);
     font-size: 52px;
 }
@@ -556,3 +556,43 @@ footer .lower_footer .social_icons .social_icon:hover path{
     top: 80px;
     animation: zoom-in-out 7s infinite;
 }
+.contact .contact_form{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.contact .contact_form .contact_with_us{
+    color: #696868;
+}
+.contact .contact_form .contact_with_us h2{
+    font-size: 42px;
+}
+.contact .contact_form .contact_with_us .img{
+    background-color: #D2EFEA;
+    height: 60px;
+    width: 60px;
+}
+.contact .contact_form .contact_with_us h3,
+.contact .contact_form .contact_with_us span
+{
+    font-size: 18px;
+}
+.contact .contact_form form .form-control:focus {
+    border-color: #D2EFEA; 
+    box-shadow: 0 0 8px 0.05rem #D2EFEA;
+}
+.contact .contact_form form input::placeholder,
+.contact .contact_form form textarea::placeholder
+{
+    opacity: 0.7;
+}
+.contact .contact_form form .btn{
+    background-color: var(--accent-color);
+    font-size: 17px;
+    padding: 12px 36px;
+    transition: background-color 0.5s;
+}
+.contact .contact_form form .btn:hover{
+    background-color: var(--SecondaryColor);
+}
+
+

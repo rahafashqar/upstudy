@@ -51,6 +51,11 @@
         font-size: 15px;
     }
 }
+@media screen and (max-width: 1000px){
+    .contact .contact_form .contact_with_us h2{
+       font-size: 38px;
+    }
+}
 @media screen and (max-width: 993px){
     .home header .navbar .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.736) !important;
@@ -69,6 +74,14 @@
     }
     .contact .hero h1{
         font-size: 36px;
+    }
+    .contact .contact_form form .submit_btn{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 993px){
+    .contact .contact_form{
+        padding: 50px 0;
     }
 }
 @media screen and (max-width:980px){
@@ -233,6 +246,9 @@
 @media screen and (max-width:373px){
     .hero a.btn{
     top: 610px;
+    }
+    .contact .contact_form .contact_with_us h2{
+        font-size: 34px;
     }
 }
 @media screen and (max-width:358px){
