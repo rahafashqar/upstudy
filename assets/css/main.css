@@ -594,5 +594,10 @@ footer .lower_footer .social_icons .social_icon:hover path{
 .contact .contact_form form .btn:hover{
     background-color: var(--SecondaryColor);
 }
+.contact .map iframe{
+    width: 100%;
+    height: 500px;
+    filter: grayscale(1);
+}
 
 
