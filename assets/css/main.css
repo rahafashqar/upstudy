@@ -49,6 +49,9 @@ li{
 .fs_14{
     font-size: 14px;
 }
+.outline_none{
+    outline: none;
+}
 .top_bar{
     background-color: #131212;
 }
@@ -442,20 +445,20 @@ footer{
 footer h2{
     font-size: 18px;
 }
-footer a{
+.home footer a{
     transition: color 0.5s;
 }
-footer a:hover{
+.home footer a:hover{
     color: #F6520A !important;
 }
-footer .center a{
+.home footer .center a{
     color: rgb(105, 104, 104);
     font-size: 15px;
 }
-footer .lower_footer .social_icons .social_icon path{
+.home footer .lower_footer .social_icons .social_icon path{
     transition: fill 0.5s;
 }
-footer .lower_footer .social_icons .social_icon:hover path{
+.home footer .lower_footer .social_icons .social_icon:hover path{
     fill: red;
 }
 
@@ -473,7 +476,7 @@ footer .lower_footer .social_icons .social_icon:hover path{
     fill: var(--accent-color);
 }
 .contact .navbar-nav .nav-link.active, .contact .navbar-nav .nav-link.show {
-    color: var(--accent-color);
+    color: var(--accent-color) !important;
 }
 .contact .navbar-nav .nav-link{
     transition: color 0.3s;
@@ -510,6 +513,86 @@ footer .lower_footer .social_icons .social_icon:hover path{
 }
 .contact .popover .popover_link:hover{
     color: var(--accent-color);
+}
+.contact .signin_modal .btn-close:focus,
+.contact .signup_modal .btn-close:focus
+{
+    box-shadow: none;
+}
+.contact .signin_modal .modal-header .sign_in_btn,
+.contact .signup_modal .modal-header .sign_in_btn
+{
+    background-color: var(--SecondaryColor);
+    font-size: 15px;
+}
+.contact .signin_modal .modal-header .sign_up_btn,
+.contact .signup_modal .modal-header .sign_up_btn
+{
+    background-color: #F2F2F2;
+    color: var(--SecondaryColor);
+    font-size: 15px;
+}
+.contact .signin_modal .modal-body .no_account,
+.contact .signup_modal .modal-body .have_account
+{
+    font-size: 15px;
+}
+.contact .signin_modal .modal-body .no_account a,
+.contact .signin_modal .modal-body a,
+.contact .signup_modal .modal-body .have_account a,
+.contact .signup_modal .modal-body a
+{
+    color: var(--accent-color);
+    transition: color 0.4s;
+}
+.contact .signin_modal .modal-body .no_account a:hover,
+.contact .signin_modal .modal-body a:hover,
+.contact .signup_modal .modal-body .have_account a:hover,
+.contact .signup_modal .modal-body a:hover
+{
+    color: var(--SecondaryColor);
+}
+.contact .signin_modal .modal-body form .form-control:focus,
+.contact .signup_modal .modal-body form .form-control:focus
+{
+    border-color: #D2EFEA; 
+    box-shadow: 0 0 8px 0.05rem #D2EFEA;
+}
+.contact .signin_modal .modal-body form input[type="checkbox"]{
+    accent-color: var(--accent-color);
+}
+.contact .signin_modal .modal-body .btn,
+.contact .signup_modal .modal-body .btn
+{
+    background-color: var(--accent-color);
+    transition: background-color 0.4s;
+}
+.contact .signin_modal .modal-body .btn:hover,
+.contact .signup_modal .modal-body .btn:hover
+{
+    background-color: var(--SecondaryColor);
+}
+.contact .search_modal .modal-header button{
+    transition: background-color 0.3s;
+}
+.contact .search_modal .modal-header button:hover{
+    background-color: var(--accent-color) !important;
+}
+.contact .search_modal .modal-header .btn-close:focus {
+    box-shadow: none;
+}
+.contact .search_modal .modal-body input{
+    color: #fff;
+}
+.contact .search_modal .modal-body input::placeholder{
+    color: #fff;
+}
+.contact .search_modal .modal-body input:hover{
+    border-bottom-color: var(--accent-color) !important;
+}
+.contact .search_modal .modal-body button{
+    right: 10px;
+    bottom: 10px;
 }
 .contact .hero{
     background-image: linear-gradient(to right, #f6ecf44f, #fff, #eaf5fd);
@@ -594,10 +677,38 @@ footer .lower_footer .social_icons .social_icon:hover path{
 .contact .contact_form form .btn:hover{
     background-color: var(--SecondaryColor);
 }
+.contact .map{
+    height: 500px;
+}
 .contact .map iframe{
     width: 100%;
-    height: 500px;
+    height: 100%;
     filter: grayscale(1);
+}
+.contact footer{
+    background-color: #111A24;
+}
+.contact .top_footer .left_side p,
+.contact .top_footer .left_side span,
+.contact .lower_footer span
+{
+    color: #CACACA;
+}
+.contact footer a{
+    transition: color 0.5s;
+    color: #CACACA;
+}
+.contact footer a:hover{
+    color: var(--accent-color) !important;
+}
+.contact footer .lower_footer .social_icons .social_icon{
+    background-color: #FFFFFF1A;
+}
+.contact footer .lower_footer .social_icons .social_icon path{
+    transition: fill 0.5s;
+}
+.contact footer .lower_footer .social_icons .social_icon:hover path{
+    fill: var(--accent-color);
 }
 
 

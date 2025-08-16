@@ -23,11 +23,12 @@
         <p class="text-white mb-0">Your learning journey begins here – now with an exclusive discount!</p>
         <span>Hurry, offer ends soon!</span>
     </section>
+    
     <header>
         <nav class="navbar navbar-expand-lg bg-transparent position-sticky w-100 fw-semibold py-4 z-1" >
             <div class="container-xl">
                 <a class="navbar-brand" href="#">
-                  <img src="./assets/images/ContactPage/navbar/logo-green.webp" alt="Upstudy logo, featuring an open book icon on a green background next to the word 'UPSTUDY' in bold black letters" />
+                  <img src="./assets/images/ContactPage/navbar/logo-green.webp" alt="Upstudy logo, featuring an open book icon on a green background next to the word 'UPSTUDY' in bold navy letters" />
                 </a>
                 <button class="navbar-toggler border-0 ms-5 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <div class="navbar_img pb-1">
@@ -43,7 +44,7 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text_secondaryColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Courses
+                        Courses
                         <img src="./assets/images/ContactPage/icons/chevron-down-icon.svg" alt="Expand menu" />
                       </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-end-0 border-start-0 border-bottom-0">
@@ -57,7 +58,7 @@
                    </li>
                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text_secondaryColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Pages
+                        Pages
                         <img src="./assets/images/ContactPage/icons/chevron-down-icon.svg" alt="Expand menu" />
                       </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-end-0 border-start-0 border-bottom-0">
@@ -75,7 +76,7 @@
                    </li>
                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text_secondaryColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Shop
+                        Shop
                         <img src="./assets/images/ContactPage/icons/chevron-down-icon.svg" alt="Expand menu" />
                       </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-end-0 border-start-0 border-bottom-0">
@@ -86,7 +87,7 @@
                    </li>
                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text_secondaryColor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Blog
+                        Blog
                         <img src="./assets/images/ContactPage/icons/chevron-down-icon.svg" alt="Expand menu" />
                       </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-end-0 border-start-0 border-bottom-0">
@@ -101,13 +102,13 @@
                   </ul>
                </div>
                <div class="start_shopping d-flex align-content-center gap-4 ms-auto order-0">
-                    <button class="login text-decoration-none text_secondaryColor d-flex gap-1 border-0 bg-transparent">
+                    <button type="button" class="login text-decoration-none text_secondaryColor d-flex gap-1 border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#signinModal">
                         <div class="user_icon">
-                            <img src="./assets/images/ContactPage/icons/user-icon.svg" alt="" />
+                            <img src="./assets/images/ContactPage/icons/user-icon.svg" alt="User login icon" />
                         </div>
                         <span class="d-flex flex-wrap align-content-end pt-1 fw-normal">Login</span>
                     </button>
-                    <button class="search_icon border border-top-0 border-bottom-0 border-1 border-secondary border-opacity-25 px-4 bg-transparent">
+                    <button type="button" class="search_icon border border-top-0 border-bottom-0 border-1 border-secondary border-opacity-25 px-4 bg-transparent" data-bs-toggle="modal" data-bs-target="#searchModal">
                         <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#021E40" d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
                     </button>
                     <button class="shopping_cart position-relative d-flex flex-wrap align-content-center bg-transparent border-0"
@@ -123,6 +124,85 @@
                </div>
             </div>
         </nav>
+        <section class="signin_modal">
+          <div class="modal fade" id="signinModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="signinModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                 <button type="button" class="btn-close ms-auto pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                 <div class="modal-header border-bottom-0">
+                    <div class="m-auto d-flex">
+                      <button type="button" class="sign_in_btn btn btn-primary rounded-0 border-0 rounded-start-1 fw-semibold px-4">Sign in</button>
+                      <button type="button" class="sign_up_btn btn btn-primary rounded-0 border-0 rounded-end-1 fw-semibold px-4" data-bs-target="#signupModelToggle" data-bs-toggle="modal">Sign up</button>
+                    </div>
+                 </div>
+                 <div class="modal-body">
+                    <span class="d-block text_secondaryColor fw-semibold fs-3 w_fit_content m-auto">Sign in</span>
+                    <div class="d-flex justify-content-center">
+                      <span class="no_account text_secondaryColor mt-2">Don’t have an account?<a href="#" class="text-decoration-none" data-bs-target="#signupModelToggle" data-bs-toggle="modal"> Sign up</a></span>
+                    </div>
+                    <form method="post" class="mt-5">
+                      <input type="text" class="form-control rounded-0 py-3 mb-4" name="email_or_password" placeholder="Email or username" required />
+                      <input type="password" class="form-control rounded-0 py-3" name="password" placeholder="Password" required />
+                      <div class="d-flex justify-content-between mt-4 mb-4">
+                        <div>
+                          <input type="checkbox" name="remmeber_signin" id="save_signin" value="yes" />
+                          <label class="text_secondaryColor" for="save_signin">Remember me</label>
+                        </div>
+                        <a href="#" class="text-decoration-none">Lost your password?</a>
+                      </div>
+                      <input class="btn w-75 py-2 text-white fw-semibold w_fit_content d-block m-auto mb-5" type="submit" value="Sign in" />
+                    </form>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </section>
+        <section class="signup_modal">
+          <div class="modal fade" id="signupModelToggle" aria-hidden="true" aria-labelledby="signupModelToggleLable" tabindex="-1" data-bs-backdrop="static">
+             <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+                 <button type="button" class="btn-close ms-auto pt-3 pe-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                 <div class="modal-header border-bottom-0">
+                   <div class="m-auto d-flex">
+                     <button type="button" class="sign_in_btn btn btn-primary rounded-0 border-0 rounded-start-1 fw-semibold px-4" data-bs-toggle="modal" data-bs-target="#signinModal">Sign in</button>
+                     <button type="button" class="sign_up_btn btn btn-primary rounded-0 border-0 rounded-end-1 fw-semibold px-4">Sign up</button>
+                   </div>
+                 </div>
+                 <div class="modal-body">
+                   <span class="d-block text_secondaryColor fw-semibold fs-3 w_fit_content m-auto">Sign up</span>
+                   <div class="d-flex justify-content-center">
+                      <span class="have_account text_secondaryColor mt-2">Already have an account?<a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#signinModal"> Sign in</a></span>
+                   </div>
+                   <form method="post" class="mt-5">
+                      <input type="text" class="form-control rounded-0 py-3 mb-4" name="username" placeholder="Username" required />
+                      <input type="email" class="form-control rounded-0 py-3 mb-4" name="email" placeholder="Email" required />
+                      <input type="password" class="form-control rounded-0 py-3 mb-4" name="password" placeholder="Password" required />
+                      <input class="btn w-75 py-2 text-white fw-semibold w_fit_content d-block m-auto mb-5" type="submit" value="Sign up" />
+                   </form>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </section>
+        <section class="search_modal">
+          <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content bg-black bg-opacity-75">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-around flex-wrap align-content-center">
+                  <div class="input_search w-50  bg-transparent border-0 position-relative">
+                    <input type="text" placeholder="Search Here.." name="search" class="bg-transparent w-100 border-0 border-bottom ps-3 pb-2 outline_none" />
+                    <button type="button" class="bg-transparent border-0 position-absolute">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fff" d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </header>
 
     <main>
@@ -135,79 +215,165 @@
               </ol>
             </nav>
             <div class="circle_shape border border-4 rounded-circle position-absolute"></div>
-            <img class="rhombus_img position-absolute d-none" src="./assets/images/ContactPage/hero/rhombus-shape.webp" alt="">
+            <img class="rhombus_img position-absolute d-none" src="./assets/images/ContactPage/hero/rhombus-shape.webp" alt="Decorative dotted diamond shape" />
         </section>
         <section class="contact_form">
           <div class="container-xl">
             <div class="row">
              <div class="col-lg-4">
               <div class="contact_with_us d-lg-block d-flex flex-wrap flex-column align-content-center m-lg-0 mb-3">
-             <h2 class="fw-semibold text_secondaryColor mb-4 w_fit_content">Contact with us</h2>
-             <div class="telephone_number d-flex gap-3 w_fit_content">
-              <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
-                <img src="./assets/images/ContactPage/icons/phone-icon.svg" alt="" />
+                <h2 class="fw-semibold text_secondaryColor mb-4 w_fit_content">Contact with us</h2>
+                <div class="telephone_number d-flex gap-3 w_fit_content">
+                  <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
+                     <img src="./assets/images/ContactPage/icons/phone-icon.svg" alt="Phone icon" />
+                  </div>
+                  <div class="details">
+                     <h3 class="fw-normal">Telephone Number</h3>
+                     <span class="text_secondaryColor fw-bold">+458 123 657 23</span>
+                  </div>
+                </div>
+                <div class="email_address d-flex gap-3 my-4 w_fit_content">
+                  <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
+                    <img src="./assets/images/ContactPage/icons/email-icon.svg" alt="Email icon" />
+                  </div>
+                  <div class="details">
+                    <h3 class="fw-normal">Email Address</h3>
+                    <span class="text_secondaryColor fw-bold">info@example.com</span>
+                  </div>
+                </div>
+                <div class="office_location_address d-flex gap-3 w_fit_content">
+                  <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
+                    <img src="./assets/images/ContactPage/icons/location-icon.svg" alt="Location pin icon" />
+                  </div>
+                  <div class="details">
+                    <h3 class="fw-normal">Office Location Address</h3>
+                    <span class="text_secondaryColor fw-bold">14/A, Kilix Home Tower, NYC</span>
+                  </div>
+                </div>
               </div>
-              <div class="details">
-                <h3 class="fw-normal">Telephone Number</h3>
-                <span class="text_secondaryColor fw-bold">+458 123 657 23</span>
-              </div>
-             </div>
-             <div class="email_address d-flex gap-3 my-4 w_fit_content">
-              <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
-                <img src="./assets/images/ContactPage/icons/email-icon.svg" alt="" />
-              </div>
-              <div class="details">
-                <h3 class="fw-normal">Email Address</h3>
-                <span class="text_secondaryColor fw-bold">info@example.com</span>
-              </div>
-             </div>
-             <div class="office_location_address d-flex gap-3 w_fit_content">
-              <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
-                <img src="./assets/images/ContactPage/icons/location-icon.svg" alt="" />
-              </div>
-              <div class="details">
-                <h3 class="fw-normal">Office Location Address</h3>
-                <span class="text_secondaryColor fw-bold">14/A, Kilix Home Tower, NYC</span>
-              </div>
-             </div>
-             </div>
              </div>
              <div class="col-lg-8">
-              <div class="form mt-lg-0 mt-4">
-              <form method="post">
-              <div class="row g-4">
-                <div class="col-md-6 col-sm-12">
-                  <input type="text" class="form-control rounded-0 py-3 me-5" placeholder="First name" aria-label="First name">
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <input type="email" class="form-control rounded-0 py-3" placeholder="Your Email" aria-label="Your Email">
-                </div>
-              </div>
-              <div class="row g-4">
-                <div class="col-md-6 col-sm-12">
-                  <input type="tel" class="form-control rounded-0 my-md-4 py-3 mt-4" placeholder="Phone Number" aria-label="Phone Number">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control rounded-0 my-md-4 py-3 mb-4" placeholder="Your Subject" aria-label="Your Subject">
-                </div>
-              </div>
-              <div class="mb-4">
-                <textarea class="form-control rounded-0" placeholder="Write A Message" rows="6"></textarea>
-              </div>
-              <div class="submit_btn w_fit_content">
-                <input class="btn text-white fw-semibold" type="submit" value="Send Message">
-              </div>
-             </form>
-             </div>
+               <div class="form mt-lg-0 mt-4">
+                 <form method="post">
+                   <div class="row g-4">
+                     <div class="col-md-6 col-sm-12">
+                       <input type="text" class="form-control rounded-0 py-3 me-5" name="first_name" placeholder="First name" aria-label="First name" required />
+                     </div>
+                     <div class="col-md-6 col-sm-12">
+                       <input type="email" class="form-control rounded-0 py-3" name="email" placeholder="Your Email" aria-label="Your Email" required />
+                     </div>
+                   </div>
+                   <div class="row g-4">
+                     <div class="col-md-6 col-sm-12">
+                       <input type="tel" class="form-control rounded-0 my-md-4 py-3 mt-4" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" required />
+                     </div>
+                     <div class="col">
+                       <input type="text" class="form-control rounded-0 my-md-4 py-3 mb-4" name="subject" placeholder="Your Subject" aria-label="Your Subject" required />
+                     </div>
+                   </div>
+                   <div class="mb-4">
+                     <textarea class="form-control rounded-0" name="message" placeholder="Write A Message" rows="6" required></textarea>
+                   </div>
+                   <div class="submit_btn w_fit_content">
+                     <input class="btn text-white fw-semibold" type="submit" value="Send Message"/>
+                   </div>
+                 </form>
+               </div>
              </div>
             </div>
           </div>
         </section>
-        <section class="map w-100 h-100">
+        <section class="map">
           <iframe class="grayscale-map" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
-         
         </section>
     </main>
+
+    <footer>
+        <div class="container-xl">
+            <div class="top_footer border-bottom border-white border-opacity-25 pb-5">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="left_side d-flex flex-column me-4">
+                    <a href="#" class="logo_img w_fit_content"><img src="./assets/images/ContactPage/footer/logo-green-white.webp" alt="Upstudy logo, featuring an open book icon on a green background next to the word 'UPSTUDY' in bold white letters" /></a>
+                    <p class="fs_14 mt-3 mb-4">World largest online learning platform. Download our apps to start learning</p>
+                    <div class="phone border-top border-white border-opacity-25 pt-3 d-flex gap-2">   
+                      <img src="./assets/images/ContactPage/icons/large-phone-icon.svg" alt="Phone icon" />  
+                      <div class="phone_no d-flex flex-column">
+                        <span class="fw-semibold">Call us free</span>
+                        <span class="fs_14">+91 458 654 528</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="center">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <div class="company_details">
+                          <h2 class="text-white fw-semibold mb-4">Company Details</h2>
+                          <nav>
+                            <ul class="fw-medium ps-0 d-flex flex-column gap-2">
+                              <li><a class="text-decoration-none" href="#">About Us</a></li>
+                              <li><a class="text-decoration-none"  href="#">Latest News</a></li>
+                              <li><a class="text-decoration-none" href="#">Term Conditions</a></li>
+                              <li><a class="text-decoration-none" href="#">Our Courses</a></li>
+                              <li><a class="text-decoration-none" href="#">Our Team</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="information">
+                          <h2 class="text-white fw-semibold mb-4">Informations</h2>
+                          <nav>
+                            <ul class="fw-medium ps-0 d-flex flex-column gap-2">
+                              <li><a class="text-decoration-none" href="#">Tutorials</a></li>
+                              <li><a class="text-decoration-none" href="#">Documentation</a></li>
+                              <li><a class="text-decoration-none" href="#">Privacy Policy</a></li>
+                              <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                              <li><a class="text-decoration-none" href="#">Support</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                  <div class="right_side">
+                    <h2 class="text-white fw-semibold">Download App</h2>
+                    <div class="app_store_img">
+                      <img class="mt-3 mb-4" src="./assets/images/HomePage/footer/appStore.webp" alt="Download on the App Store" />
+                    </div>
+                    <div class="google_play_img">
+                      <img src="./assets/images/HomePage/footer/googlePlay.webp" alt="Get it on Google Play" />
+                    </div>
+                  </div>
+                </div>
+             </div>
+            </div>
+            <div class="lower_footer py-4">
+              <div class="row">
+                <div class="col-sm-6">
+                  <span>Copyright 2025 Upstudy | Developed By Devthrow.</span>
+                </div>
+                <div class="col-sm-6">
+                  <div class="social_icons d-flex gap-2 justify-content-end">
+                    <a href="#" class="facebook_img social_icon p-2 rounded-circle d-flex flex-wrap justify-content-center align-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fff" d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z"/></svg>
+                    </a>
+                    <a href="#" class="twitter_x_img social_icon p-2 rounded-circle d-flex flex-wrap justify-content-center align-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fff" d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"/></svg>
+                    </a>
+                    <a href="#" class="linkedIn_img social_icon p-2 rounded-circle d-flex flex-wrap justify-content-center align-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fff" d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script>

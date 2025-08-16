@@ -159,6 +159,11 @@
         font-size: 32px;
     }
 }
+@media screen and (max-width:750px){
+    .contact .search_modal .modal-body .input_search{
+        width: 75% !important;
+    }
+}
 @media screen and (max-width:740px){
     .hero h1{
         font-size: 74px;
@@ -207,6 +212,9 @@
     .contact header .navbar .start_shopping .search_icon{
         border: none !important;
     }
+    .contact footer .top_footer .left_side a{
+        margin: auto;
+    }
 }
 @media screen and (max-width:547px){
     .hero h1{
@@ -241,6 +249,9 @@
     }
     .hero a.btn{
     top: 590px;
+    }
+    .contact .search_modal .modal-body .input_search{
+        width: 90% !important;
     }
 }
 @media screen and (max-width:373px){
