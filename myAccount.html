@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>My account</title>
     <!-- fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <!-- responsive css file -->
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
-<body class="contact">
+<body class="myAccount">
     <section class="top_bar d-flex gap-1 justify-content-center py-3 position-relative fs_14 fw-medium">
         <p class="text-white mb-0">Your learning journey begins here – now with an exclusive discount!</p>
         <span>Hurry, offer ends soon!</span>
@@ -81,7 +81,7 @@
                       </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-end-0 border-start-0 border-bottom-0">
                         <li><a class="dropdown-item fw-medium" href="#">Shop</a></li>
-                        <li><a class="dropdown-item fw-medium" href="./myAccount.html" target="_blank">My account</a></li>
+                        <li><a class="dropdown-item fw-medium" href="#">My account</a></li>
                         <li><a class="dropdown-item fw-medium" href="#">Checkout</a></li>
                       </ul>
                    </li>
@@ -97,7 +97,7 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text_secondaryColor active" href="#">Contact</a>
+                      <a class="nav-link text_secondaryColor" href="./contact.html" target="_blank">Contact</a>
                     </li>
                   </ul>
                </div>
@@ -207,173 +207,18 @@
 
     <main>
         <section class="hero position-relative z-0">
-            <h1 class="text_secondaryColor pb-3 fw-semibold w_fit_content m-auto">Contact</h1>
+            <h1 class="text_secondaryColor pb-3 fw-semibold w_fit_content m-auto">My account</h1>
             <nav class="w_fit_content m-auto" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html" target="_blank" class="text-decoration-none text_secondaryColor">Home</a></li>
-                <li class="breadcrumb-item active text_secondaryColor" aria-current="page">Contact</li>
+                <li class="breadcrumb-item active text_secondaryColor" aria-current="page">My account</li>
               </ol>
             </nav>
             <div class="circle_shape border border-4 rounded-circle position-absolute"></div>
             <img class="rhombus_img position-absolute d-none" src="./assets/images/ContactPage/hero/rhombus-shape.webp" alt="Decorative dotted diamond shape" />
         </section>
-        <section class="contact_form">
-          <div class="container-xl">
-            <div class="row">
-             <div class="col-lg-4">
-              <div class="contact_with_us d-lg-block d-flex flex-wrap flex-column align-content-center m-lg-0 mb-3">
-                <h2 class="fw-semibold text_secondaryColor mb-4 w_fit_content">Contact with us</h2>
-                <div class="telephone_number d-flex gap-3 w_fit_content">
-                  <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
-                     <img src="./assets/images/ContactPage/icons/phone-icon.svg" alt="Phone icon" />
-                  </div>
-                  <div class="details">
-                     <h3 class="fw-normal">Telephone Number</h3>
-                     <span class="text_secondaryColor fw-bold">+458 123 657 23</span>
-                  </div>
-                </div>
-                <div class="email_address d-flex gap-3 my-4 w_fit_content">
-                  <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
-                    <img src="./assets/images/ContactPage/icons/email-icon.svg" alt="Email icon" />
-                  </div>
-                  <div class="details">
-                    <h3 class="fw-normal">Email Address</h3>
-                    <span class="text_secondaryColor fw-bold">info@example.com</span>
-                  </div>
-                </div>
-                <div class="office_location_address d-flex gap-3 w_fit_content">
-                  <div class="phone_img img d-flex justify-content-center flex-wrap align-content-center rounded-circle">
-                    <img src="./assets/images/ContactPage/icons/location-icon.svg" alt="Location pin icon" />
-                  </div>
-                  <div class="details">
-                    <h3 class="fw-normal">Office Location Address</h3>
-                    <span class="text_secondaryColor fw-bold">14/A, Kilix Home Tower, NYC</span>
-                  </div>
-                </div>
-              </div>
-             </div>
-             <div class="col-lg-8">
-               <div class="form mt-lg-0 mt-4">
-                 <form method="post">
-                   <div class="row g-4">
-                     <div class="col-md-6 col-sm-12">
-                       <input type="text" class="form-control rounded-0 py-3 me-5" name="first_name" placeholder="First name" aria-label="First name" required />
-                     </div>
-                     <div class="col-md-6 col-sm-12">
-                       <input type="email" class="form-control rounded-0 py-3" name="email" placeholder="Your Email" aria-label="Your Email" required />
-                     </div>
-                   </div>
-                   <div class="row g-4">
-                     <div class="col-md-6 col-sm-12">
-                       <input type="tel" class="form-control rounded-0 my-md-4 py-3 mt-4" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" required />
-                     </div>
-                     <div class="col">
-                       <input type="text" class="form-control rounded-0 my-md-4 py-3 mb-4" name="subject" placeholder="Your Subject" aria-label="Your Subject" required />
-                     </div>
-                   </div>
-                   <div class="mb-4">
-                     <textarea class="form-control rounded-0" name="message" placeholder="Write A Message" rows="6" required></textarea>
-                   </div>
-                   <div class="submit_btn w_fit_content">
-                     <input class="btn text-white fw-semibold" type="submit" value="Send Message"/>
-                   </div>
-                 </form>
-               </div>
-             </div>
-            </div>
-          </div>
-        </section>
-        <section class="map">
-          <iframe class="grayscale-map" loading="lazy" src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
-        </section>
     </main>
 
-    <footer>
-        <div class="container-xl">
-            <div class="top_footer border-bottom border-white border-opacity-25 pb-5">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="left_side d-flex flex-column me-4">
-                    <a href="#" class="logo_img w_fit_content"><img src="./assets/images/ContactPage/footer/logo-green-white.webp" alt="Upstudy logo, featuring an open book icon on a green background next to the word 'UPSTUDY' in bold white letters" /></a>
-                    <p class="fs_14 mt-3 mb-4">World largest online learning platform. Download our apps to start learning</p>
-                    <div class="phone border-top border-white border-opacity-25 pt-3 d-flex gap-2">   
-                      <img src="./assets/images/ContactPage/icons/large-phone-icon.svg" alt="Phone icon" />  
-                      <div class="phone_no d-flex flex-column">
-                        <span class="fw-semibold">Call us free</span>
-                        <span class="fs_14">+91 458 654 528</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="center">
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6">
-                        <div class="company_details">
-                          <h2 class="text-white fw-semibold mb-4">Company Details</h2>
-                          <nav>
-                            <ul class="fw-medium ps-0 d-flex flex-column gap-2">
-                              <li><a class="text-decoration-none" href="#">About Us</a></li>
-                              <li><a class="text-decoration-none"  href="#">Latest News</a></li>
-                              <li><a class="text-decoration-none" href="#">Term Conditions</a></li>
-                              <li><a class="text-decoration-none" href="#">Our Courses</a></li>
-                              <li><a class="text-decoration-none" href="#">Our Team</a></li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="information">
-                          <h2 class="text-white fw-semibold mb-4">Informations</h2>
-                          <nav>
-                            <ul class="fw-medium ps-0 d-flex flex-column gap-2">
-                              <li><a class="text-decoration-none" href="#">Tutorials</a></li>
-                              <li><a class="text-decoration-none" href="#">Documentation</a></li>
-                              <li><a class="text-decoration-none" href="#">Privacy Policy</a></li>
-                              <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                              <li><a class="text-decoration-none" href="#">Support</a></li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                  <div class="right_side">
-                    <h2 class="text-white fw-semibold">Download App</h2>
-                    <div class="app_store_img">
-                      <img class="mt-3 mb-4" src="./assets/images/HomePage/footer/appStore.webp" alt="Download on the App Store" />
-                    </div>
-                    <div class="google_play_img">
-                      <img src="./assets/images/HomePage/footer/googlePlay.webp" alt="Get it on Google Play" />
-                    </div>
-                  </div>
-                </div>
-             </div>
-            </div>
-            <div class="lower_footer py-4">
-              <div class="row">
-                <div class="col-sm-6">
-                  <span>Copyright 2025 Upstudy | Developed By Devthrow.</span>
-                </div>
-                <div class="col-sm-6">
-                  <div class="social_icons d-flex gap-2 justify-content-end">
-                    <a href="#" class="facebook_img social_icon p-2 rounded-circle d-flex flex-wrap justify-content-center align-content-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fff" d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z"/></svg>
-                    </a>
-                    <a href="#" class="twitter_x_img social_icon p-2 rounded-circle d-flex flex-wrap justify-content-center align-content-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fff" d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"/></svg>
-                    </a>
-                    <a href="#" class="linkedIn_img social_icon p-2 rounded-circle d-flex flex-wrap justify-content-center align-content-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fff" d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"/></svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script>

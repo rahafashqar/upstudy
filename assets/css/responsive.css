@@ -1,5 +1,5 @@
 @media screen and (min-width:1783px){
-    .contact .hero .rhombus_img{
+    .hero .rhombus_img{
         display: block !important;
     }
 }
@@ -42,7 +42,7 @@
     .promo_book .promo_book_img{
         right: 70px;
     }
-    .contact .hero .circle_shape{
+    .hero .circle_shape{
         display: none;
     }
 }
@@ -69,10 +69,12 @@
     .home header .navbar .start_shopping .btn{
         margin-top: 10px;
     }
-    .contact .top_bar{
+    .contact .top_bar,
+    .myAccount .top_bar{
         display: none !important;
     }
-    .contact .hero h1{
+    .contact .hero h1,
+    .myAccount .hero h1{
         font-size: 36px;
     }
     .contact .contact_form form .submit_btn{
@@ -155,12 +157,13 @@
     footer .top_footer .right_side .app_store_img img{
         margin: 0 !important;
     }
-    .contact .hero h1{
+    .contact .hero h1,
+    .myAccount .hero h1{
         font-size: 32px;
     }
 }
 @media screen and (max-width:750px){
-    .contact .search_modal .modal-body .input_search{
+    .search_modal .modal-body .input_search{
         width: 75% !important;
     }
 }
@@ -203,13 +206,15 @@
         margin: auto;
         padding-top: 20px;
     }
-    .contact header .navbar-toggler{
+    .contact header .navbar-toggler,
+    .myAccount header .navbar-toggler{
         margin-left: 3px !important;
     }
-    .contact header .navbar .start_shopping .shopping_cart{
+    .contact header .navbar .start_shopping .shopping_cart,
+    .myAccount header .navbar .start_shopping .shopping_cart{
         display: none !important;
     }
-    .contact header .navbar .start_shopping .search_icon{
+    header .navbar .start_shopping .search_icon{
         border: none !important;
     }
     .contact footer .top_footer .left_side a{
@@ -239,7 +244,8 @@
     .intro_section .main_img{
         padding: 30px !important;
     }
-    .contact header .navbar .start_shopping{
+    .contact header .navbar .start_shopping ,
+    .myAccount header .navbar .start_shopping{
         display: none !important;
     }
 }
@@ -250,7 +256,7 @@
     .hero a.btn{
     top: 590px;
     }
-    .contact .search_modal .modal-body .input_search{
+    .search_modal .modal-body .input_search{
         width: 90% !important;
     }
 }
