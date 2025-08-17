@@ -727,33 +727,48 @@ footer h2{
     height: 100%;
     filter: grayscale(1);
 }
-.contact footer{
+.contact footer,
+.myAccount footer
+{
     background-color: #111A24;
 }
-.contact .top_footer .left_side p,
-.contact .top_footer .left_side span,
-.contact .lower_footer span
+.contact .top_footer .left_side p, .myAccount .top_footer .left_side p,
+.contact .top_footer .left_side span, .myAccount .top_footer .left_side span,
+.contact .lower_footer span, .myAccount .lower_footer span
 {
     color: #CACACA;
 }
-.contact footer a{
+.contact footer a,
+.myAccount footer a
+{
     transition: color 0.5s;
     color: #CACACA;
 }
-.contact footer a:hover{
+.contact footer a:hover,
+.myAccount footer a:hover
+{
     color: var(--accent-color) !important;
 }
-.contact footer .lower_footer .social_icons .social_icon{
+.contact footer .lower_footer .social_icons .social_icon,
+.myAccount footer .lower_footer .social_icons .social_icon
+{
     background-color: #FFFFFF1A;
 }
-.contact footer .lower_footer .social_icons .social_icon path{
+.contact footer .lower_footer .social_icons .social_icon path,
+.myAccount footer .lower_footer .social_icons .social_icon path
+{
     transition: fill 0.5s;
 }
-.contact footer .lower_footer .social_icons .social_icon:hover path{
+.contact footer .lower_footer .social_icons .social_icon:hover path,
+.myAccount footer .lower_footer .social_icons .social_icon:hover path
+{
     fill: var(--accent-color);
 }
 
 /*My account Page*/
+.myAccount .login_form{
+    padding-bottom: 120px;
+}
 .myAccount .login_form h2{
     font-size: 38px;
     margin-left: 4px;
