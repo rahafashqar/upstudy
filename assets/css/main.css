@@ -467,49 +467,41 @@ footer h2{
 }
 
 /*Contact Page*/
-.contact .top_bar,
-.myAccount .top_bar
+.common .top_bar
 {
     background-color: #0e2a47;
 }
-.contact .top_bar span,
-.myAccount .top_bar span
+.common .top_bar span
 {
     color: #f6b13d;
 }
-.contact .navbar .navbar-toggler .navbar_img path,
-.myAccount .navbar .navbar-toggler .navbar_img path
+.common .navbar .navbar-toggler .navbar_img path
 {
     transition: fill 0.5s;
 }
-.contact .navbar .navbar-toggler .navbar_img:hover path,
-.myAccount .navbar .navbar-toggler .navbar_img:hover path
+.common .navbar .navbar-toggler .navbar_img:hover path
 {
     fill: var(--accent-color);
 }
-.contact .navbar-nav .nav-link.active, .contact .navbar-nav .nav-link.show,
-.myAccount .navbar-nav .nav-link.active, .contact .navbar-nav .nav-link.show
+.common .navbar-nav .nav-link.active, .contact .navbar-nav .nav-link.show
 {
     color: var(--accent-color) !important;
 }
-.contact .navbar-nav .nav-link,
-.myAccount .navbar-nav .nav-link
+.common .navbar-nav .nav-link
 {
     transition: color 0.3s;
     font-size: 15px;
 }
-.contact .navbar-nav .nav-link:hover,
-.myAccount .navbar-nav .nav-link:hover
+.common .navbar-nav .nav-link:hover
 {
     color: var(--accent-color) !important;
 }
-.contact .navbar-nav .nav-item .dropdown-menu,
-.myAccount .navbar-nav .nav-item .dropdown-menu
+.common .navbar-nav .nav-item .dropdown-menu
 {
     border-color: var(--accent-color);
 }
-.contact .dropdown-item.active, .contact .dropdown-item:active,
-.myAccount .dropdown-item.active, .myAccount .dropdown-item:active
+.common .dropdown-item.active,
+.common .dropdown-item:active
 {
     background-color: var(--accent-color);
 }
@@ -520,32 +512,27 @@ footer h2{
     color: var(--accent-color) !important;
 }
 .navbar .start_shopping .search_icon path ,
-.contact .navbar .start_shopping .shopping_cart path,
-.myAccount .navbar .start_shopping .shopping_cart path
+.common .navbar .start_shopping .shopping_cart path
 {
     transition: fill 0.4s;
 }
 .navbar .start_shopping .search_icon:hover path{
     fill: var(--accent-color);
 }
-.contact .navbar .start_shopping .shopping_cart:hover path,
-.myAccount .navbar .start_shopping .shopping_cart:hover path
+.common .navbar .start_shopping .shopping_cart:hover path
 {
     fill: var(--accent-color);
 }
-.contact header .navbar .start_shopping .shopping_cart span,
-.myAccount header .navbar .start_shopping .shopping_cart span
+.common header .navbar .start_shopping .shopping_cart span
 {
     left: 30px;
 }
-.contact .popover,
-.myAccount .popover
+.common .popover
 {
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-.contact .popover .popover_link:hover,
-.myAccount .popover .popover_link:hover
+.common .popover .popover_link:hover
 {
     color: var(--accent-color);
 }
@@ -554,15 +541,12 @@ footer h2{
 {
     box-shadow: none;
 }
-.signin_modal .modal-header .sign_in_btn,
-.signup_modal .modal-header .sign_in_btn
+.signin_modal .modal-header .sign_in_btn
 {
     background-color: var(--SecondaryColor);
     font-size: 15px;
 }
-.signin_modal .modal-header .sign_up_btn,
-.signup_modal .modal-header .sign_up_btn
-{
+.signin_modal .modal-header .sign_up_btn{
     background-color: #F2F2F2;
     color: var(--SecondaryColor);
     font-size: 15px;
@@ -572,17 +556,14 @@ footer h2{
 {
     font-size: 15px;
 }
-.signin_modal .modal-body .no_account a,
+
 .signin_modal .modal-body a,
-.signup_modal .modal-body .have_account a,
 .signup_modal .modal-body a
 {
     color: var(--accent-color);
     transition: color 0.4s;
 }
-.signin_modal .modal-body .no_account a:hover,
 .signin_modal .modal-body a:hover,
-.signup_modal .modal-body .have_account a:hover,
 .signup_modal .modal-body a:hover
 {
     color: var(--SecondaryColor);
@@ -612,6 +593,16 @@ footer h2{
 {
     background-color: var(--SecondaryColor);
 }
+.signup_modal .modal-header .sign_in_btn
+{
+    background-color: #F2F2F2;
+    color: var(--SecondaryColor);
+    font-size: 15px;
+}
+.signup_modal .modal-header .sign_up_btn{
+    background-color: var(--SecondaryColor);
+    font-size: 15px;
+}
 .search_modal .modal-header button{
     transition: background-color 0.3s;
 }
@@ -634,13 +625,11 @@ footer h2{
     right: 10px;
     bottom: 10px;
 }
-.contact .hero,
-.myAccount .hero{
+.common .hero{
     background-image: linear-gradient(to right, #f6ecf44f, #fff, #eaf5fd);
     box-shadow: inset 0 0 30px rgb(0 0 0 / 5%);
 }
-.contact .hero h1,
-.myAccount .hero h1{
+.common .hero h1{
     font-size: 52px;
     padding-top: 120px;
 }
@@ -727,40 +716,34 @@ footer h2{
     height: 100%;
     filter: grayscale(1);
 }
-.contact footer,
-.myAccount footer
+.common footer
 {
     background-color: #111A24;
 }
-.contact .top_footer .left_side p, .myAccount .top_footer .left_side p,
-.contact .top_footer .left_side span, .myAccount .top_footer .left_side span,
-.contact .lower_footer span, .myAccount .lower_footer span
+.common .top_footer .left_side p,
+.common .top_footer .left_side span,
+.common .lower_footer span
 {
     color: #CACACA;
 }
-.contact footer a,
-.myAccount footer a
+.common footer a
 {
     transition: color 0.5s;
     color: #CACACA;
 }
-.contact footer a:hover,
-.myAccount footer a:hover
+.common footer a:hover
 {
     color: var(--accent-color) !important;
 }
-.contact footer .lower_footer .social_icons .social_icon,
-.myAccount footer .lower_footer .social_icons .social_icon
+.common footer .lower_footer .social_icons .social_icon
 {
     background-color: #FFFFFF1A;
 }
-.contact footer .lower_footer .social_icons .social_icon path,
-.myAccount footer .lower_footer .social_icons .social_icon path
+.common footer .lower_footer .social_icons .social_icon path
 {
     transition: fill 0.5s;
 }
-.contact footer .lower_footer .social_icons .social_icon:hover path,
-.myAccount footer .lower_footer .social_icons .social_icon:hover path
+.common footer .lower_footer .social_icons .social_icon:hover path
 {
     fill: var(--accent-color);
 }
