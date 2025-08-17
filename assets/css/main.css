@@ -593,8 +593,13 @@ footer h2{
     border-color: #D2EFEA; 
     box-shadow: 0 0 8px 0.05rem #D2EFEA;
 }
-.signin_modal .modal-body form input[type="checkbox"]{
-    accent-color: var(--accent-color);
+.form-check-input:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.form-check-input:focus {
+    border-color: #D2EFEA;
+    box-shadow: 0 0 0 .25rem #D2EFEA;
 }
 .signin_modal .modal-body .btn,
 .signup_modal .modal-body .btn
@@ -748,4 +753,33 @@ footer h2{
     fill: var(--accent-color);
 }
 
-
+/*My account Page*/
+.myAccount .login_form h2{
+    font-size: 38px;
+    margin-left: 4px;
+    margin-top: 90px;
+}
+.myAccount .login_form form .password_input .close_eye_img{
+    right: 12px;
+    top: 52px;
+    cursor: pointer;
+}
+.myAccount .login_form form .btn{
+    background-color: var(--accent-color);
+    font-size: 15px;
+    padding: 10px 0;
+    transition: background-color 0.4s;
+}
+.myAccount .login_form form .btn:hover{
+    background-color: var(--SecondaryColor);
+}
+.myAccount .login_form form a{
+    transition: color 0.4s;
+}
+.myAccount .login_form form a:hover{
+    color: var(--accent-color) !important;
+}
+.myAccount .form-control:focus {
+    border-color: #D2EFEA; 
+    box-shadow: 0 0 8px 0.05rem #D2EFEA;
+}
