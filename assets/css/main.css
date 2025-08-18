@@ -781,3 +781,26 @@ footer h2{
     border-color: #D2EFEA; 
     box-shadow: 0 0 8px 0.05rem #D2EFEA;
 }
+
+/*Cart Page*/
+.cart .cart_status{
+    padding-top: 55px;
+    padding-bottom: 125px;
+}
+.cart .cart_status .cart_empty,
+.cart .cart_status a
+{
+    background-color: var(--accent-color);
+}
+.cart .cart_status .cart_empty{
+    top: 18px;
+    padding: 20px 25px;
+}
+.cart .cart_status a{
+    font-size: 15px;
+    padding: 12px 29px;
+    transition: background-color 0.4s;
+}
+.cart .cart_status a:hover{
+    background-color: var(--SecondaryColor);
+}
