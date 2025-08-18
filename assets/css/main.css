@@ -98,9 +98,12 @@ header .navbar .nav-item:hover .dropdown-menu{
     visibility: visible;
     opacity: 1;
 }
-.home .dropdown-item.active, .home .dropdown-item:active
+.navbar-nav .nav-item .dropdown-menu li a:hover
 {
-    background-color: var(--primaryColor);
+    color: var(--primaryColor);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
 }
 .popover .popover_title{ /*اذا بدي أحدد انع تابع لسيكشن الهيدر بحتاج js*/
     font-family: var(--primaryFont);
@@ -500,10 +503,9 @@ footer h2{
 {
     border-color: var(--accent-color);
 }
-.common .dropdown-item.active,
-.common .dropdown-item:active
+.common .navbar-nav .nav-item .dropdown-menu li a:hover
 {
-    background-color: var(--accent-color);
+    color: var(--accent-color);
 }
 .navbar .start_shopping .login{
     transition: color 0.4s;
