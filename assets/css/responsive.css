@@ -69,22 +69,27 @@
     .home header .navbar .start_shopping .btn{
         margin-top: 10px;
     }
+    .home header .navbar .shopping_cart{
+        margin: 15px 0;
+    }
+    .home header .navbar .shopping_cart span{
+            top: -10px;
+            left: 25px;
+    }
     .common .top_bar{
         display: none !important;
     }
     .common .hero h1{
         font-size: 36px;
     }
+    .contact .contact_form{
+        padding: 50px 0;
+    }
     .contact .contact_form form .submit_btn{
         margin: auto;
     }
     .myAccount .login_form h2{
         font-size: 32px;
-    }
-}
-@media screen and (max-width: 993px){
-    .contact .contact_form{
-        padding: 50px 0;
     }
 }
 @media screen and (max-width:980px){

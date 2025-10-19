@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
             <!-- Antonio -->
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <!-- fontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap 5.3 css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- main css file -->
@@ -56,14 +58,14 @@
     </section>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent position-fixed z-3 w-100 fw-semibold py-4" >
+        <nav class="navbar navbar-expand-lg bg-transparent position-fixed w-100 fw-semibold py-4" >
             <div class="container-xl">
                 <a class="navbar-brand" href="#">
                   <img src="./assets/images/HomePage/navbar/logo.webp" alt="Upstudy logo, featuring an open book icon on a red background next to the word 'UPSTUDY' in bold white letters" />
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <div class="navbar_img">
-                    <img src="./assets/images/HomePage/icons/navbar-icon.svg" alt="Menu icon" />
+                    <i class="menu_icon fa-solid fa-bars fa-sm" style="color: #ffffff;"></i>
                   </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -76,7 +78,7 @@
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Courses
-                        <img src="./assets/images/HomePage/icons/chevron-down-icon.svg" alt="Expand menu" />
+                        <i class="expand_menu fa-solid fa-angle-down fa-xs" style="color: #ffffff;"></i>
                       </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-danger border-end-0 border-start-0 border-bottom-0">
                         <li><a class="dropdown-item fw-medium" href="#">Course Grid Layout</a></li>
@@ -90,8 +92,7 @@
                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Pages
-                        <img src="./assets/images/HomePage/icons/chevron-down-icon.svg" alt="Expand menu" />
-                      </a>
+                        <i class="expand_menu fa-solid fa-angle-down fa-xs" style="color: #ffffff;"></i>                      </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-danger border-end-0 border-start-0 border-bottom-0">
                         <li><a class="dropdown-item fw-medium" href="#">About us</a></li>
                         <li><a class="dropdown-item fw-medium" href="#">Our Team</a></li>
@@ -108,7 +109,7 @@
                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Blog
-                        <img src="./assets/images/HomePage/icons/chevron-down-icon.svg" alt="Expand menu" />
+                        <i class="expand_menu fa-solid fa-angle-down fa-xs" style="color: #ffffff;"></i>
                       </a>
                       <ul class="dropdown-menu rounded-0 ps-2 py-4 pe-5 border-3 border-danger border-end-0 border-start-0 border-bottom-0">
                         <li><a class="dropdown-item fw-medium" href="#">Blog Lists</a></li>
@@ -121,14 +122,14 @@
                     </li>
                   </ul>
                   <div class="start_shopping d-flex align-content-center gap-5">
-                   <a class="shopping_cart position-relative d-flex flex-wrap align-content-center"
+                   <a class="shopping_cart position-relative d-flex flex-wrap align-content-center text-decoration-none"
                       href="./cart.html"
                       data-bs-toggle="popover"
                       data-bs-placement="bottom"
                       data-bs-trigger="hover focus"
                       data-bs-html="true"
                       data-bs-content=' <div class="popover_body"><div class="popover_title fw-bolder m-auto">Currently Empty: $0.00</div><a href="#" class="popover_link text-decoration-none ms-auto fst-italic">Continue shopping</a></div> '>
-                      <img src="./assets/images/HomePage/icons/cart-shopping.svg" alt="Shopping cart icon with notification badge" />
+                      <i class="cart_shopping fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
                       <span class="position-absolute translate-middle rounded-circle bg_primaryColor text-white d-flex justify-content-center flex-wrap align-content-center">0</span>
                    </a>
                     <a class="btn bg_primaryColor text-white fw-semibold rounded-pill py-2 px-4" href="#" role="button">Get Started</a>
@@ -139,7 +140,7 @@
     </header>
 
     <main>
-      <div class="hero vh-100 overflow-hidden position-relative">
+      <section class="hero vh-100 overflow-hidden position-relative">
        <div class="container-xl">
         <h1 class="text_primaryColor text-uppercase fw-bold position-absolute z-2 pe-3">Stay fit 
             <span class="text-white">not <br /> body builder</span>   <!-- br تم استخدامها بشكل مؤقت لحتوى نوخد جافا س -->
@@ -152,8 +153,8 @@
        <div class="rotate_red_layer3 bg_primaryColor position-absolute z-1"></div>
        <div class="rotate_gray_layer position-absolute z-1"></div>
        <div class="hero_top_layer vh-100 w-100 opacity-50 text-danger position-absolute z-0"></div>
-      </div> 
-      <div class="intro_section">
+      </section> 
+      <section class="intro_section">
         <div class="container-xl">
           <div class="row">
             <div class="col-lg-5 col-md-12">
@@ -215,8 +216,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="popular_classes">
+      </section>
+      <section class="popular_classes">
         <div class="container-xl">
           <h2 class="title text_primaryColor text-uppercase fw-semibold text-center fs_14 letter_spacing_2">Online Classes</h2>
           <h3 class="text-white fw-semibold text-center">Our popular classes</h3>
@@ -456,8 +457,8 @@
             </div>
         </div>
         </div>
-      </div>
-      <div class="achievements pb-3">
+      </section>
+      <section class="achievements pb-3">
         <div class="container-xl border-bottom border-1 border-white border-opacity-25 pb-5">
           <div class="row row-gap-sm-4">
             <div class="col-md-3">
@@ -486,18 +487,16 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="trainers">
+      </section>
+      <section class="trainers">
         <div class="container-lg">
           <h2 class="title text_primaryColor text-uppercase fw-semibold text-center fs_14 letter_spacing_2">Trainers</h2>
           <h3 class="fw-semibold text-white text-center pb-5">Meet our top trainers</h3>
           <div class="row">
             <div class="col-lg-3 col-sm-6 p-0">
               <div class="trainer_img bg-info position-relative">
-                <img class="w-100 h-100" src="./assets/images/HomePage/trainers/JonathanTrainer.webp" alt="Jonathan Bean, CEO of Fitness, smiling confidently with a gym background" />
-                <a href="#">
-                  <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
-                </a>
+                <img class="w-100 h-100 trainer_image" src="./assets/images/HomePage/trainers/JonathanTrainer.webp" alt="Jonathan Bean, CEO of Fitness, smiling confidently with a gym background" />
+                <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
                 <a class="text-white fs-5 fw-bold text-decoration-none" href="#"><span class="trainer_name position-absolute z-3">Jonathan Bean</span></a>
                 <span class="teacher_degree text-white position-absolute z-3">CEO, Fitness</span>
                 <div class="trainer_social_media d-flex position-absolute z-3">
@@ -516,10 +515,8 @@
             </div>
             <div class="col-lg-3 col-sm-6 p-0">
               <div class="trainer_img bg-info position-relative">
-                <img class="w-100 h-100" src="./assets/images/HomePage/trainers/AntonioTrainer.webp" alt="Antonio Twin, strength trainer, posing with weights in a training facility" />
-                <a href="#">
-                  <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
-                </a>
+                <img class="w-100 h-100 trainer_image" src="./assets/images/HomePage/trainers/AntonioTrainer.webp" alt="Antonio Twin, strength trainer, posing with weights in a training facility" />
+                <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
                 <a class="text-white fs-5 fw-bold text-decoration-none" href="#"><span class="trainer_name position-absolute z-3">Antonio Twin</span></a>
                 <span class="teacher_degree text-white position-absolute z-3">Trainer, Strength</span>
                 <div class="trainer_social_media d-flex position-absolute z-3">
@@ -538,10 +535,8 @@
             </div>
             <div class="col-lg-3 col-sm-6 p-0">
               <div class="trainer_img bg-info position-relative">
-                <img class="w-100 h-100" src="./assets/images/HomePage/trainers/MarioTrainer.webp" alt="Mario Hedger, CEO of Fitter, smiling confidently" />
-                <a href="#">
-                  <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
-                </a>
+                <img class="w-100 h-100 trainer_image" src="./assets/images/HomePage/trainers/MarioTrainer.webp" alt="Mario Hedger, CEO of Fitter, smiling confidently" />
+                <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
                 <a class="text-white fs-5 fw-bold text-decoration-none" href="#"><span class="trainer_name position-absolute z-3">Mario Hedger</span></a>
                 <span class="teacher_degree text-white position-absolute z-3">CEO, Fitter</span>
                 <div class="trainer_social_media d-flex position-absolute z-3">
@@ -560,10 +555,8 @@
             </div>
             <div class="col-lg-3 col-sm-6 p-0">
               <div class="trainer_img bg-info position-relative">
-                <img class="w-100 h-100" src="./assets/images/HomePage/trainers/MurphyTrainer.webp" alt="Murphy Attorn, CEO of CODURTRUS, lifting a dumbbell in a fitness environment" />
-                <a href="#">
-                  <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
-                </a>
+                <img class="w-100 h-100 trainer_image" src="./assets/images/HomePage/trainers/MurphyTrainer.webp" alt="Murphy Attorn, CEO of CODURTRUS, lifting a dumbbell in a fitness environment" />
+                <div class="trainer_img_top_layer w-100 h-100 position-absolute top-0 z-1"></div>
                 <a class="text-white fs-5 fw-bold text-decoration-none" href="#"><span class="trainer_name position-absolute z-3">Murphy Attorn</span></a>
                 <span class="teacher_degree text-white position-absolute z-3">CEO, CODURTRUS</span>
                 <div class="trainer_social_media d-flex position-absolute z-3">
@@ -582,8 +575,17 @@
             </div>
           </div>
         </div>
+
+        <div class="my_modal position-fixed top-0 start-0 end-0 bottom-0 d-flex flex-wrap justify-content-center align-content-center opacity-0 invisible">
+        <div class="modal_content rounded-4">
+          <i class="fa-solid fa-xmark x_mark rounded-2 p-1"></i>
+            <i class="fa-solid fa-arrow-left left_arrow_mark rounded-2"></i>
+            <img src="./assets/images/HomePage/trainers/JonathanTrainer.webp" class="modal_img rounded-4 user-select-none"/>
+            <i class="fa-solid fa-arrow-right right_arrow_mark rounded-2"></i>
+        </div>
       </div>
-      <div class="promo_book">
+      </section>
+      <section class="promo_book">
         <div class="container-lg position-relative">
           <div class="details">
             <h2 class="title text_primaryColor text-uppercase fw-semibold fs_14 letter_spacing_2">We love coaching peoples</h2>
@@ -595,8 +597,8 @@
             <img src="./assets/images/HomePage/promoBook/shapeYourBodyBook.webp" alt="Cover of the book titled 'Shape Your Body Today' featuring a muscular person lifting a dumbbell, with text promoting services like Cardio, Cross Fit, Martial Art, Diet Nutrition, and Body Building" />
           </div>
         </div>
-      </div>
-      <div class="testimonials pt-2">
+      </section>
+      <section class="testimonials pt-2">
         <div class="container-xl">
           <h2 class="title text_primaryColor text-uppercase fw-semibold text-center fs_14 letter_spacing_2">Testimonials</h2>
           <h3 class="text-white fw-semibold text-center pb-2">What they say about us</h3>
@@ -654,8 +656,8 @@
             </div>
         </div>
         </div>
-      </div>
-      <div class="leatest_news">
+      </section>
+      <section class="leatest_news">
         <div class="container-xl">
           <h2 class="title text-uppercase text_primaryColor fs_14 fw-semibold text-center letter_spacing_2">Latest tips & news</h2>
           <h3 class="text-white fw-semibold text-center pt-2 pb-5">Have a look at our news</h3>
@@ -707,7 +709,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -796,11 +798,13 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script>
       const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
       const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
     </script>
-
+    
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
